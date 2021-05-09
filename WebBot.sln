@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebBot", "WebBot\WebBot.csproj", "{E8212DFA-6C40-4471-B9CC-E87CEEC2CA3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebBot", "WebBot\WebBot.csproj", "{E8212DFA-6C40-4471-B9CC-E87CEEC2CA3C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebBotModule.BLL", "WebBotModule.BLL\WebBotModule.BLL.csproj", "{CF3BCA48-67F7-46D3-BF3C-53FBF76FE4D3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebBotModule.DAL", "WebBotModule.DAL\WebBotModule.DAL.csproj", "{925F7832-1837-47CF-A197-91859F23959D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebBotModule.DI", "WebBotModule.DI\WebBotModule.DI.csproj", "{AA3B3108-1258-4595-8CB2-D69CBE20CC32}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebBotModule.DTO", "WebBotModule.DTO\WebBotModule.DTO.csproj", "{1893E988-C230-4111-BAEA-75A824239559}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebBotModule.DBI", "WebBotModule.DBI\WebBotModule.DBI.csproj", "{5CBF1539-66A4-4AAB-92D6-23C3D2E1594D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +25,26 @@ Global
 		{E8212DFA-6C40-4471-B9CC-E87CEEC2CA3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8212DFA-6C40-4471-B9CC-E87CEEC2CA3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8212DFA-6C40-4471-B9CC-E87CEEC2CA3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF3BCA48-67F7-46D3-BF3C-53FBF76FE4D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF3BCA48-67F7-46D3-BF3C-53FBF76FE4D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF3BCA48-67F7-46D3-BF3C-53FBF76FE4D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF3BCA48-67F7-46D3-BF3C-53FBF76FE4D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{925F7832-1837-47CF-A197-91859F23959D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{925F7832-1837-47CF-A197-91859F23959D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{925F7832-1837-47CF-A197-91859F23959D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{925F7832-1837-47CF-A197-91859F23959D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA3B3108-1258-4595-8CB2-D69CBE20CC32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA3B3108-1258-4595-8CB2-D69CBE20CC32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA3B3108-1258-4595-8CB2-D69CBE20CC32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA3B3108-1258-4595-8CB2-D69CBE20CC32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1893E988-C230-4111-BAEA-75A824239559}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1893E988-C230-4111-BAEA-75A824239559}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1893E988-C230-4111-BAEA-75A824239559}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1893E988-C230-4111-BAEA-75A824239559}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CBF1539-66A4-4AAB-92D6-23C3D2E1594D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CBF1539-66A4-4AAB-92D6-23C3D2E1594D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CBF1539-66A4-4AAB-92D6-23C3D2E1594D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CBF1539-66A4-4AAB-92D6-23C3D2E1594D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
