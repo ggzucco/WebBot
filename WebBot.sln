@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebBotModule.DI", "WebBotMo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebBotModule.DTO", "WebBotModule.DTO\WebBotModule.DTO.csproj", "{1893E988-C230-4111-BAEA-75A824239559}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebBotModule.DBI", "WebBotModule.DBI\WebBotModule.DBI.csproj", "{5CBF1539-66A4-4AAB-92D6-23C3D2E1594D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebBotModule.DBI", "WebBotModule.DBI\WebBotModule.DBI.csproj", "{5CBF1539-66A4-4AAB-92D6-23C3D2E1594D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebBotModule.DBC", "WebBotModule.DBC\WebBotModule.DBC.csproj", "{0EE2044D-0F1A-4916-9F73-3B803DB2B08E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{5CBF1539-66A4-4AAB-92D6-23C3D2E1594D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CBF1539-66A4-4AAB-92D6-23C3D2E1594D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CBF1539-66A4-4AAB-92D6-23C3D2E1594D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EE2044D-0F1A-4916-9F73-3B803DB2B08E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EE2044D-0F1A-4916-9F73-3B803DB2B08E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EE2044D-0F1A-4916-9F73-3B803DB2B08E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EE2044D-0F1A-4916-9F73-3B803DB2B08E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

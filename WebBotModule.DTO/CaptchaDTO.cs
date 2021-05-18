@@ -10,14 +10,14 @@ namespace WebBotModule.DTO
     /// </summary>
     public class CaptchaDTO
     {
-        //[Key]
-        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public DateTime dateGeneration { get; set; }
+
         public Int64 idCaptcha { get; set; }
-        //[ForeignKey("UserGroup")]
-        public Int64 numIdUseGroup { get; set; }
+        public Int64 numIdUserGroup { get; set; }
         public Int64 numAction { get; set; }
+        
         public String vcharCaptchaValue { get; set; }
-        public DateTime dateGeneration { get; set; }        
-        //public UserGrupDTO UserGroup { get; set; }
+        
+        public GroupUserDTO GroupUser { get; set; }
     }
 }

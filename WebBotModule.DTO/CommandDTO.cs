@@ -10,16 +10,15 @@ namespace WebBotModule.DTO
     /// </summary>
     public class CommandDTO
     {
-        //[Key]
-        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public Int64 idCommand { get; set; }
-        public String vcharHelpCommand { get; set; }
-        public String vcharDescription { get; set; }
-        public Boolean boolOnlyAdmin { get; set; }
         public Boolean boolActive { get; set; }
+        public Boolean boolOnlyAdmin { get; set; }
+                
+        public Int64 idCommand { get; set; }
+        public Int64 numIdBot { get; set; }
 
-        //[ForeignKey("Bot")]
-        //public Int64 numIdBot { get; set; }        
-        //public BotDTO Bot { get; set; }
+        public String vcharDescription { get; set; }
+        public String vcharHelpCommand { get; set; }
+        
+        public BotDTO Bot { get; set; }
     }
 }

@@ -10,19 +10,17 @@ namespace WebBotModule.DTO
     /// </summary>
     public class GroupDTO
     {
-        //[Key]
-        //[Column(Order = 1)]
-        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public Int64 idGroup { get; set; }
-        //[Key]
-        //[Column(Order = 1)]
-        public Int64 idTelegramGroup { get; set; }
-        //[ForeignKey("Languages")]
+        public Boolean boolActive { get; set; }
+
+        public Int64 idGroup { get; set; }        
+        public Int64 idTelegramGroup { get; set; }        
         public Int64 numIdLanguage { get; set; }
+
         public String vcharCountryName { get; set; }
         public String vcharGroupName { get; set; }
         public String vcharGroupAdress { get; set; }
-        public Boolean boolActive { get; set; }
-        //public LanguageModel Language { get; set; }
+
+        public virtual ICollection<GroupUserDTO> GroupUsers { get; set; }
+        public LanguageDTO Language { get; set; }
     }
 }
