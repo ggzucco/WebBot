@@ -10,13 +10,14 @@ namespace WebBotModule.DTO
     /// </summary>
     public class MessageDTO
     {
-        //[Key]
-        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        DateTime dateScheduled { get; set; }
+
         public Int64 idMessage { get; set; }
-        //[ForeignKey("Languages")]
         public Int64 numIdLanguage { get; set; }
         public Int64 numType { get; set; }
-        public String vcharMessageText { get; set; }        
-        //public LanguageModel Language { get; set; }
+
+        public String vcharMessageText { get; set; }
+        
+        public LanguageDTO Language { get; set; }
     }
 }

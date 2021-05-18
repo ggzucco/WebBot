@@ -17,8 +17,9 @@ namespace WebBot.Models
         {
             Welcome = 1,
             Rule = 2,
-            Filter = 3
-        }
+            Filter = 3,
+            Schedule = 4,
+        }        
         public enum enLanguage
         {
             Burmese = 1,

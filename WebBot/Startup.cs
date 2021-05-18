@@ -6,10 +6,13 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using WebBot.Controllers;
+using WebBotModule.DBC.EFCorePostGres;
 
 namespace WebBot
 {
@@ -26,6 +29,10 @@ namespace WebBot
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            var connectionEN = CryptographyController.Encrypt(Configuration["ConnectionStrings:WebbotPostGresProductionEN"]);
+            var connection = CryptographyController.Decrypt(connectionEN);
+            services.AddDbContext<PostgresContext>(options =>options.UseNpgsql(connection, b => b.MigrationsAssembly("WebBot")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
